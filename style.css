@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', 'Ubuntu Mono', 'Fira Mono';
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b5e3f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b7a9c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006888;
+}
+
+/* Responsive Screen */
+@media only screen and (max-width: 800px) {
+
+    .title {
+        font-size: 2em;
+    }
+
+    .test-area {
+        width: 80vw;
+    }
+}
+
+/* BACKGROUND*/
+
+.container {
+    height: 100vh;
+    background-image: url('quiz.jpg');
+    background-size: cover;
+    /* background-position-y: 70%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: -1;
+}
+
+.title {
+    margin-top: 12vh;
+    font-size: 3em;
+}
+
+/* JAVASCRIPT TEST AREA */
+
+.test-area {
+    width: 80vw;
+    height: 90vh;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: rgb(255, 255, 255, 0.8);
+    text-align: center;
+    color: rgb(2, 40, 90);
+    overflow: auto;
+}
+
+/* CALCULATORS */
+
+.calculator-container {
+    background-color: rgb(255, 255, 255, 0.8);
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.screen {
+    background-color: rgb(123, 178, 204);
+    padding: 16px;
+    font-size: 2em;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.calculatorButton {
+    margin-top: 16px;
+    background-color: rgb(37, 117, 155);
+    padding: 16px 0;
+    width: 110px;
+    text-align: center;
+}
+
+.numDisplay {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    color: rgb(123, 178, 204);
+    font-size: 1.5em;
+}
+
+.quizName{
+  text-align:left;
+  color: black;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+h1{
+  margin-top: 25px;
+}
+
+.grid-container1 {
+  align-items: center;
+  display: grid;
+  font-size: 20px;
+  margin-left: 40px;
+  grid-gap: 25px;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+  grid-template-areas:
+  "p1-title p1-title"
+  "type-vocab1 display-vocab1"
+  "type-def1 display-def1"
+
+  "type-vocab2 display-vocab2"
+  "type-def2 display-def2"
+
+  "type-vocab3 display-vocab3"
+  "type-def3 display-def3"
+
+  "type-vocab4 display-vocab4"
+  "type-def4 display-def4"
+
+  "type-vocab5 display-vocab5"
+  "type-def5 display-def5"
+
+  "type-vocab6 display-vocab6"
+  "type-def6 display-def6"
+
+  "type-vocab7 display-vocab7"
+  "type-def7 display-def7"
+
+  "type-vocab8 display-vocab8"
+  "type-def8 display-def8"
+
+  "type-vocab9 display-vocab9"
+  "type-def9 display-def9"
+
+  "type-vocab10 display-vocab10"
+  "type-def10 display-def10"
+  "nextStore nextPage2"
+  ;
+}
+
+.btns{
+  height: 30px;
+  width: 60%;
+  text-align: center;
+  font-size: 1em;
+}
+
+/* CSS for all type-vocab & answer-vocab */
+.tyVoc {
+  height: 18px;
+  width: 60%;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+/* CSS for all type-def */
+.tyDef {
+  height: 40px;
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+
+/* CSS for all display-vocab */
+.disVoc {
+  text-align: center;
+  height: 20px;
+  width: 50%;
+  background-color: white;
+  font-size: 1.1em;
+  padding: 0.5em;
+}
+
+/* CSS for all display-def & question-def */
+.disDef {
+  text-align: center;
+  height: 70px;
+  word-wrap: break-word;
+  background-color: white;
+  font-size: 1.1em;
+  padding: 0.5em;
+}
+
+.btns:hover {
+   box-shadow: 0 0 5px rgb(37, 117, 155);
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.btns-final:hover {
+   box-shadow: 0 0 5px rgb(37, 117, 155);
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.btns-test:hover {
+   box-shadow: 0 0 5px rgb(37, 117, 155);
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.type-vocab1{grid-area: type-vocab1;}
+.type-vocab2{grid-area: type-vocab2;}
+.type-vocab3{grid-area: type-vocab3;}
+.type-vocab4{grid-area: type-vocab4;}
+.type-vocab5{grid-area: type-vocab5;}
+.type-vocab6{grid-area: type-vocab6;}
+.type-vocab7{grid-area: type-vocab7;}
+.type-vocab8{grid-area: type-vocab8;}
+.type-vocab9{grid-area: type-vocab9;}
+.type-vocab10{grid-area: type-vocab10;}
+
+.type-def1{grid-area: type-def1;}
+.type-def2{grid-area: type-def2;}
+.type-def3{grid-area: type-def3;}
+.type-def4{grid-area: type-def4;}
+.type-def5{grid-area: type-def5;}
+.type-def6{grid-area: type-def6;}
+.type-def7{grid-area: type-def7;}
+.type-def8{grid-area: type-def8;}
+.type-def9{grid-area: type-def9;}
+.type-def10{grid-area: type-def10;}
+
+.display-vocab1{grid-area: display-vocab1;}
+.display-vocab2{grid-area: display-vocab2;}
+.display-vocab3{grid-area: display-vocab3;}
+.display-vocab4{grid-area: display-vocab4;}
+.display-vocab5{grid-area: display-vocab5;}
+.display-vocab6{grid-area: display-vocab6;}
+.display-vocab7{grid-area: display-vocab7;}
+.display-vocab8{grid-area: display-vocab8;}
+.display-vocab9{grid-area: display-vocab9;}
+.display-vocab10{grid-area: display-vocab10;}
+
+.display-def1{grid-area: display-def1;}
+.display-def2{grid-area: display-def2;}
+.display-def3{grid-area: display-def3;}
+.display-def4{grid-area: display-def4;}
+.display-def5{grid-area: display-def5;}
+.display-def6{grid-area: display-def6;}
+.display-def7{grid-area: display-def7;}
+.display-def8{grid-area: display-def8;}
+.display-def9{grid-area: display-def9;}
+.display-def10{grid-area: display-def10;}
+
+.nextPage2{
+  grid-area: nextPage2;
+  margin-left: 400px;
+  margin-bottom: 20px;
+}
+
+.nextStore{
+  grid-area: nextStore;
+  margin-bottom: 20px;
+}
+
+.grid-container2 {
+  align-items: center;
+  display: grid;
+  font-size: 20px;
+  margin-left: 40px;
+  grid-gap: 25px;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-areas:
+  "p2-title p2-title p2-title"
+  "answer-vocab1 enter-vocab1 question-def1"
+  "answer-vocab2 enter-vocab2 question-def2"
+  "answer-vocab3 enter-vocab3 question-def3"
+  "answer-vocab4 enter-vocab4 question-def4"
+  "answer-vocab5 enter-vocab5 question-def5"
+  "answer-vocab6 enter-vocab6 question-def6"
+  "answer-vocab7 enter-vocab7 question-def7"
+  "answer-vocab8 enter-vocab8 question-def8"
+  "answer-vocab9 enter-vocab9 question-def9"
+  "answer-vocab10 enter-vocab10 question-def10"
+  ". . nextPage3"
+  ;
+}
+
+.p1-title {grid-area: p1-title;}
+.p2-title {grid-area: p2-title;}
+
+.answer-vocab1{grid-area: answer-vocab1;}
+.answer-vocab2{grid-area: answer-vocab2;}
+.answer-vocab3{grid-area: answer-vocab3;}
+.answer-vocab4{grid-area: answer-vocab4;}
+.answer-vocab5{grid-area: answer-vocab5;}
+.answer-vocab6{grid-area: answer-vocab6;}
+.answer-vocab7{grid-area: answer-vocab7;}
+.answer-vocab8{grid-area: answer-vocab8;}
+.answer-vocab9{grid-area: answer-vocab9;}
+.answer-vocab10{grid-area: answer-vocab10;}
+
+.enter-vocab1{grid-area: enter-vocab1;}
+.enter-vocab2{grid-area: enter-vocab2;}
+.enter-vocab3{grid-area: enter-vocab3;}
+.enter-vocab4{grid-area: enter-vocab4;}
+.enter-vocab5{grid-area: enter-vocab5;}
+.enter-vocab6{grid-area: enter-vocab6;}
+.enter-vocab7{grid-area: enter-vocab7;}
+.enter-vocab8{grid-area: enter-vocab8;}
+.enter-vocab9{grid-area: enter-vocab9;}
+.enter-vocab10{grid-area: enter-vocab10;}
+
+.question-def1{grid-area: question-def1;}
+.question-def2{grid-area: question-def2;}
+.question-def3{grid-area: question-def3;}
+.question-def4{grid-area: question-def4;}
+.question-def5{grid-area: question-def5;}
+.question-def6{grid-area: question-def6;}
+.question-def7{grid-area: question-def7;}
+.question-def8{grid-area: question-def8;}
+.question-def9{grid-area: question-def9;}
+.question-def10{grid-area: question-def10;}
+
+.invis {
+  display: none;
+}
+
+.btns-final{
+  height: 40px;
+  width: 120px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.nextPage3{
+  grid-area: nextPage3;
+  margin-left: 400px;
+  margin-bottom: 20px;
+}
+
+.grid-container3 {
+  align-items: center;
+  margin-left: 30px;
+}
+
+.resultPoint {
+  font-size: 200%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.btns-test{
+  height: 45px;
+  width: 145px;
+  font-size: 1.3em;
+  margin-top: 20px;
+  text-align: center;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Final Project</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code|Ubuntu+Mono|VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+      <div class="quizName">VocabQUIZ</div>
+        <div class="test-area">
+         <div class="grid-container1">
+           <h1 class="p1-title"><center>Please enter Vocab and Definitions here</center></h1>
+          <!--item1-->
+          <input class="type-vocab1 tyVoc" type="text" placeholder="vocab 1">
+          <input class="type-def1 tyDef" type="text" placeholder="definition 1">
+          <div class="display-vocab1 disVoc"></div>
+          <div class="display-def1 disDef"></div>
+          <!--item2-->
+          <input class="type-vocab2 tyVoc" type="text" placeholder="vocab 2">
+          <input class="type-def2 tyDef" type="text" placeholder="definition 2">
+          <div class="display-vocab2 disVoc"></div>
+          <div class="display-def2 disDef"></div>
+          <!--item3-->
+          <input class="type-vocab3 tyVoc" type="text" placeholder="vocab 3">
+          <input class="type-def3 tyDef" type="text" placeholder="definition 3">
+          <div class="display-vocab3 disVoc"></div>
+          <div class="display-def3 disDef"></div>
+          <!--item4-->
+          <input class="type-vocab4 tyVoc" type="text" placeholder="vocab 4">
+          <input class="type-def4 tyDef" type="text" placeholder="definition 4">
+          <div class="display-vocab4 disVoc"></div>
+          <div class="display-def4 disDef"></div>
+          <!--item5-->
+          <input class="type-vocab5 tyVoc" type="text" placeholder="vocab 5">
+          <input class="type-def5 tyDef" type="text" placeholder="definition 5">
+          <div class="display-vocab5 disVoc"></div>
+          <div class="display-def5 disDef"></div>
+          <!--item6-->
+          <input class="type-vocab6 tyVoc" type="text" placeholder="vocab 6">
+          <input class="type-def6 tyDef" type="text" placeholder="definition 6">
+          <div class="display-vocab6 disVoc"></div>
+          <div class="display-def6 disDef"></div>
+          <!--item7-->
+          <input class="type-vocab7 tyVoc" type="text" placeholder="vocab 7">
+          <input class="type-def7 tyDef" type="text" placeholder="definition 7">
+          <div class="display-vocab7 disVoc"></div>
+          <div class="display-def7 disDef"></div>
+          <!--item8-->
+          <input class="type-vocab8 tyVoc" type="text" placeholder="vocab 8">
+          <input class="type-def8 tyDef" type="text" placeholder="definition 8">
+          <div class="display-vocab8 disVoc"></div>
+          <div class="display-def8 disDef"></div>
+          <!--item9-->
+          <input class="type-vocab9 tyVoc" type="text" placeholder="vocab 9">
+          <input class="type-def9 tyDef" type="text" placeholder="definition 9">
+          <div class="display-vocab9 disVoc"></div>
+          <div class="display-def9 disDef"></div>
+          <!--item10-->
+          <input class="type-vocab10 tyVoc" type="text" placeholder="vocab 10">
+          <input class="type-def10 tyDef" type="text" placeholder="definition 10">
+          <div class="display-vocab10 disVoc"></div>
+          <div class="display-def10 disDef"></div>
+          <!--nextpage-->
+          <button class="btns-final nextStore" onclick="storeAll()">Store</button>
+          <button class="btns-final nextPage2" onclick="goPage2()">Next Page</button>
+         </div>
+
+         <div class="grid-container2 invis">
+           <h1 class="p2-title"><center>Please enter correct Vocab to match Defitions</center></h1>
+          <!--item1-->
+          <input class="answer-vocab1 tyVoc" type="text">
+          <button class="btns enter-vocab1" onclick="checkItem1()">Check</button>
+          <div class="question-def1 disDef"></div>
+          <!--item2-->
+          <input class="answer-vocab2 tyVoc" type="text">
+          <button class="btns enter-vocab2" onclick="checkItem2()">Check</button>
+          <div class="question-def2 disDef"></div>
+          <!--item3-->
+          <input class="answer-vocab3 tyVoc" type="text">
+          <button class="btns enter-vocab3" onclick="checkItem3()">Check</button>
+          <div class="question-def3 disDef"></div>
+          <!--item4-->
+          <input class="answer-vocab4 tyVoc" type="text">
+          <button class="btns enter-vocab4" onclick="checkItem4()">Check</button>
+          <div class="question-def4 disDef"></div>
+          <!--item5-->
+          <input class="answer-vocab5 tyVoc" type="text">
+          <button class="btns enter-vocab5" onclick="checkItem5()">Check</button>
+          <div class="question-def5 disDef"></div>
+          <!--item6-->
+          <input class="answer-vocab6 tyVoc" type="text">
+          <button class="btns enter-vocab6" onclick="checkItem6()">Check</button>
+          <div class="question-def6 disDef"></div>
+          <!--item7-->
+          <input class="answer-vocab7 tyVoc" type="text">
+          <button class="btns enter-vocab7" onclick="checkItem7()">Check</button>
+          <div class="question-def7 disDef"></div>
+          <!--item8-->
+          <input class="answer-vocab8 tyVoc" type="text">
+          <button class="btns enter-vocab8" onclick="checkItem8()">Check</button>
+          <div class="question-def8 disDef"></div>
+          <!--item9-->
+          <input class="answer-vocab9 tyVoc" type="text">
+          <button class="btns enter-vocab9" onclick="checkItem9()">Check</button>
+          <div class="question-def9 disDef"></div>
+          <!--item10-->
+          <input class="answer-vocab10 tyVoc" type="text">
+          <button class="btns enter-vocab10" onclick="checkItem10()">Check</button>
+          <div class="question-def10 disDef"></div>
+          <!--checkanswer-->
+          <button class="btns-final nextPage3" onclick="goPage3()">Next Page</button>
+         </div>
+
+         <div class="grid-container3 invis">
+           <h1 class="p3-title"><center>You have completed the Vocab test!</center></h1>
+           <div class="resultPoint"></div>
+           <div class="resultImage"></div>
+           <button class="btns-test again-test" onclick="testAgain()">Go Back</button>
+           <button class="btns-test back-test" onclick="testBack()">First Page</button>
+         </div>
+        </div>
+          <!-- Javascript Here -->
+          <script src="final.js"></script>
+      </div>
+      <!-- <img src="good-job.gif"> -->
+</body>
+</html>
